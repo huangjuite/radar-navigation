@@ -168,7 +168,7 @@ RUN apt-get -o Acquire::ForceIPv4=true update && apt-get -o Acquire::ForceIPv4=t
 RUN chown -R ${NB_UID} ${HOME}/
 RUN echo "${NB_USER} ALL=(ALL)  ALL" > /etc/sudoers
 
-RUN echo "cd ~/subt-virtual" >> ${HOME}/.bashrc
+RUN echo "cd ~/radar-navigation" >> ${HOME}/.bashrc
 
 # Support of nvidia-docker 2.0
 ENV NVIDIA_VISIBLE_DEVICES=all

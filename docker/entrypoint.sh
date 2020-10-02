@@ -4,5 +4,6 @@
 # setup ros environment
 source "/opt/ros/$ROS_DISTRO/setup.bash"
 cd /home/argsubt/radar-navigation
+source "environment.sh"
 
 exec "$@"
