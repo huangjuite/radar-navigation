@@ -42,20 +42,18 @@ docker run -it \
     -e DISPLAY \
     -e QT_X11_NO_MITSHM=1 \
     -e XAUTHORITY=$XAUTH \
-    -e ROS_MASTER_URI=$ROS_MASTER_URI \
-    -e ROS_IP=$ROS_IP \
     -v "$XAUTH:$XAUTH" \
-    -v "/home/$USER/subt-analyze:/home/argsubt/subt-analyze" \
+    -v "$PWD:/home/argsubt/radar-navigation" \
     -v "/media:/media" \
     -v "/tmp/.X11-unix:/tmp/.X11-unix" \
     -v "/etc/localtime:/etc/localtime:ro" \
     -v "/dev:/dev" \
     -v "/var/run/docker.sock:/var/run/docker.sock" \
-    --name argsubt_core \
+    --name argsubt \
     --network host \
     --rm \
     --privileged \
     --security-opt seccomp=unconfined \
     $DOCKER_OPTS \
-    argnctu/subt:core \
+    juite/subt \
     bash

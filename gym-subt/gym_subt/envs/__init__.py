@@ -1,0 +1,19 @@
+from gym_subt.envs.subt_tunnel_env import SubtTunnelEnv
+from gym_subt.envs.subt_urban_env import SubtUrbanEnv
+from gym_subt.envs.subt_tunnel_linear_env import SubtTunnelLinearEnv
+from gym_subt.envs.subt_tunnel_allaction_env import SubtTunnelAllactionEnv
+from gym_subt.envs.subt_tunnel_front_env import SubtTunnelFrontEnv
+from gym_subt.envs.subt_cave_allaction_env import SubtCaveAllactionEnv
+from gym_subt.envs.subt_cave_goal_env import SubtCaveGoalEnv
+from gym_subt.envs.subt_cave_rnn_env import SubtCaveRnnEnv
+from gym_subt.envs.subt_cave_dense_env import SubtCaveDenseEnv
+from gym_subt.envs.subt_cave_baseline_env import SubtCaveBaselineEnv
+from gym_subt.envs.subt_cave_noback_env import SubtCaveNobackEnv
+from gym_subt.envs.subt_cave_3d_env import SubtCave3DEnv
+
+from gym_subt.envs.subt_cave_forward_discrete_env import SubtCaveForwardDiscreteEnv
+from gym_subt.envs.subt_cave_forward_goal_env import SubtCaveForwardGoalEnv
+from gym_subt.envs.subt_cave_forward_env import SubtCaveForwardEnv
+
+
+
